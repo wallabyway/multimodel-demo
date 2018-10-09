@@ -70,3 +70,17 @@
     color: #222; }
   .navbar-link.active {
     color: #33C3F0; }
+
+/* Bigger than 550 */
+@media (max-width: 980px) {
+  .navbar-img { width: 5px; padding: 0; margin: 0 0 0 0 }
+  .navbar-button {margin-right:16px;}
+  button {margin-left:5px; margin-right:5px; padding-left:15px; padding-right:15px;}
+}
+
+/* Bigger than 550 */
+@media (max-width: 670px) {
+  button {margin-left:1px; margin-right:1px; padding-left:4px; padding-right:4px;}
+  .navbar-button {margin-right:8px;}
+  .mobile {display:none}
+}

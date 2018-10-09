@@ -51,6 +51,7 @@ function onDocumentLoadSuccess(doc) {
 function initializeViewer() {
     Autodesk.Viewing.Initializer(options, function onInitialized() {
       viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv);
+      viewer.setTheme("light-theme");
       var errorCode = viewer.start();
       avd.load( options.urn1, onDocumentLoadSuccess );
     });
